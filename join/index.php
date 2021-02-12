@@ -8,7 +8,6 @@ $token=bin2hex(random_bytes(32));
 $_SESSION["token"]=$token;
 
 if(!empty($_POST)){
-    $filename=$_FILES["picture"]["name"];
 
     //nameチェック
     if(empty($_POST["name"])){

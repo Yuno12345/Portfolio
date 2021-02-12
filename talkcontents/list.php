@@ -131,8 +131,6 @@ $good_records=$getgood->fetchAll();
                   <?php foreach($good_records as $good_record):?>
                     <?php if($idea["id"]===$good_record["idea_id"]):?>
                       <?php echo $good_record["good_num"]?>
-                    <?php else:?>
-                      <?php echo "0"?>
                     <?php endif?>
                   <?php endforeach?>
                 </span>
