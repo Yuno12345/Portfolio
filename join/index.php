@@ -48,10 +48,7 @@ if(!empty($_POST)){
 
     //エラーチェックを全て通過した時
     if(empty($error)){
-        $picture=date(YmdHis).$filename;
-        move_uploaded_file($_FILES["picture"]["tmp_name"],"../user_pictures/".$picture);
         $_SESSION["user_info"]=$_POST;
-        $_SESSION["user_info"]["picture"]=$picture;
         header("Location:check.php?key=$token");
         exit();
     }
