@@ -9,8 +9,7 @@
     $token=$_SESSION["token"];
     //トークンチェック
     if($token!=$_GET["key"] || empty($_SESSION["token"]) || empty($_SESSION["user_info"])){
-        header("Location:index.php");
-        exit();
+        
     }
     elseif(empty($_POST)){
         //POSTの値がないかつトークンが正しい時（初回のアクセス）はトークンを作り直す(リロード対策とCSRF対策)
