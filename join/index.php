@@ -113,10 +113,6 @@ if($_GET["state"]==="rewrite"){
         </select>
         </p></li>
         <p class="error"><?=$error["age"]==="blank"?"※年齢が選択されていません":""?></p>
-        
-        <li>写真 :
-            <input type="file" name="picture" size="35" value="test">
-        </li>
         <br>
         <input class="input-btn" type="submit" value="確認画面へ">
     </form>

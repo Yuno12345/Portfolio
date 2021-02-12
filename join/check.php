@@ -67,8 +67,6 @@
         <?=$_SESSION["user_info"]["age"]<=5?"ちゃい":"歳"?>
         </p>
 
-        <li>写真</li>
-        <img src="../user_pictures/<?=h($_SESSION["user_info"]["picture"])?>" width="100px" height="100px">
         <a class="rewrite" href="index.php?state=rewrite">修正する</a> | <input class="input-btn" type="submit" value="登録する">
     </form>
     <ul>
