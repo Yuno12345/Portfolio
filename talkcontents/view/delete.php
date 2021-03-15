@@ -17,9 +17,6 @@ if($referer!="http://localhost:8888/Portfolio/talkcontents/view/index.php?catego
     exit();
 }
 
-//memberidはテスト
-$member_id=1;
-
 //メンバーidが一致すればトークデータ消去
 $delete=$db->prepare('DELETE FROM talks WHERE id=?');
 $delete->execute(array($talk_id));

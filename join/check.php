@@ -63,9 +63,7 @@
         <p class="check"><?=h($_SESSION["user_info"]["gender"])?></p>
 
         <li>年齢</li>
-        <p class="check"><?=h($_SESSION["user_info"]["age"])?>
-        <?=$_SESSION["user_info"]["age"]<=5?"ちゃい":"歳"?>
-        </p>
+        <p class="check"><?=h($_SESSION["user_info"]["age"])?>歳</p>
 
         <a class="rewrite" href="index.php?state=rewrite">修正する</a> | <input class="input-btn" type="submit" value="登録する">
     </form>

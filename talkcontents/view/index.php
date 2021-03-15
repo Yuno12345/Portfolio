@@ -23,9 +23,6 @@ if(!empty($_GET["idea"])){
 //categoryとideaのid情報
 $getinfo="category=$category_id&idea=$idea_id";
 
-//memberidはテスト
-$member_id=1;
-
 
 //テキストが送信されてきた場合
 if(!empty($_POST["input-text"])){
