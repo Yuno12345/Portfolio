@@ -12,7 +12,7 @@ $talk_id=h($_GET["id"]);
 $referer = $_SERVER['HTTP_REFERER'];
 
 //リファラ確認による直リンク禁止
-if($referer!="http://localhost:8888/Portfolio/talkcontents/view/index.php?category=$category_id&idea=$idea_id"){
+if($referer!="https://recordideas.herokuapp.com/talkcontents/view/index.php?category=$category_id&idea=$idea_id"){
     header("Location:../../index.php");
     exit();
 }
