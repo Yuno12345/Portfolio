@@ -6,7 +6,7 @@ function h($str){
 function login_check(){
     session_start();
     if(!isset($_SESSION["user_id"])){
-      header("Location:http://localhost:8888/Portfolio/index.php");
+      header("Location:https://recordideas.herokuapp.com/index.php");
     }
 }
 ?>
